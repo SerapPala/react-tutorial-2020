@@ -1,0 +1,32 @@
+.booklist{
+    width:90vw;
+    max-width:1170px;
+    margin:5rem auto;
+    display:grid;
+    gap:2rem;
+    grid-template-columns: repeat(3,1fr);
+    @include lg{
+        grid-template-columns: repeat(3,1fr);
+    }
+    @include md{
+        grid-template-columns: repeat(2,1fr);
+    }
+    @include sm{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .book{
+        background: $Light;
+        border-radius: 1rem;
+        padding:1rem 2rem;
+        h1{
+            margin-top:0.5rem;
+            font-size:2rem;
+        }
+        p{
+            margin-top:0.5rem;
+            font-size:1.3rem;
+        }
+        
+    }
+}
+
